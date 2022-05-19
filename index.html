@@ -15,27 +15,22 @@
 </head>
 
 <body class="body">
-    <div class="container">
-        <form class="js-form">
-            <p>
-                <label>
-                    Dodaj nowe zadanie
-                </label>
-            </p>
-            <p>
-                <label>
-                    <input class="js-newTask" placeholder="Co należy zrobić?">
-                    <button>Dodaj zadanie</button>
-                </label>
-            </p>
-        </form>
-    </div>
-    <div class="container">
-        <p>Lista zadań</p>
-        <ul class="js-tasks list"></ul>
-    </div>
-
-
+    <main>
+        <header>
+            <h1>Lista zadań</h1>
+        </header>
+        <section>
+            <h2>Dodaj nowe zadanie</h2>
+    <form class="js-form">
+        <input class="js-newTask" autofocus placeholder="Co należy zrobić?">
+        <button>Dodaj zadanie</button>
+    </form>
+        </section>
+        <section>
+            <h2>Lista zadań</h2>
+            <ul class="js-tasks list"></ul>
+        </section>
+    </main>
 </body>
 
 </html>
