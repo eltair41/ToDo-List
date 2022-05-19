@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -5,4 +13,5 @@
     align-items: center;
     min-height: 100vh;
     background-color: silver;
+    font-family: 'Montserrat', sans-serif;;
 }
