@@ -10,8 +10,12 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
     background-color: silver;
     font-family: 'Montserrat', sans-serif;;
+}
+
+.header {
+  text-align: left;
+  margin-left: 100px;
 }
