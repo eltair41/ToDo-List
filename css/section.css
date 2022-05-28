@@ -1,0 +1,40 @@
+.section {
+    background-color: white;
+    max-width: 100%;
+    margin: 10px 100px;
+}
+
+.section__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 2px solid #a39898;
+    padding: 10px;
+}
+
+.section__form {
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-gap: 10px;
+    margin: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+.section__button {
+    color: white;
+    background-color: teal;
+    border: none;
+    padding: 10px;
+}
+.section__button:hover {
+    cursor: pointer;
+    background-color: #006666;
+}
+
+.section__button:active {
+    background-color: #004d4d;
+}
+
+
+ 
