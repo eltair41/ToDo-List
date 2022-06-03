@@ -1,7 +1,5 @@
 .section {
     background-color: white;
-    max-width: 100%;
-    margin: 10px 100px;
 }
 
 .section__header {
@@ -14,11 +12,17 @@
 
 .section__form {
     display: grid;
-    grid-template-columns: 6fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
     margin: 10px;
-    padding-top: 0px;
     padding-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    .section__form {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
 
 .section__button {
@@ -26,6 +30,7 @@
     background-color: teal;
     border: none;
     padding: 10px;
+    border-radius: 3px;
 }
 .section__button:hover {
     cursor: pointer;

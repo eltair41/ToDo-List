@@ -7,10 +7,6 @@ html {
 }
 
 .body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
     background-color: silver;
     font-family: 'Montserrat', sans-serif;;
     word-break: break-word;
@@ -18,5 +14,4 @@ html {
 
 .header {
   text-align: left;
-  margin-left: 100px;
 }
