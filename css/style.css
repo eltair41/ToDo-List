@@ -13,6 +13,7 @@ html {
     min-height: 100vh;
     background-color: silver;
     font-family: 'Montserrat', sans-serif;;
+    word-break: break-word;
 }
 
 .header {
