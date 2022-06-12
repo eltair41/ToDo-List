@@ -1,5 +1,5 @@
 .list {
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .list__item {
@@ -7,7 +7,7 @@
     grid-template-columns: auto 1fr auto;
     grid-gap: 10px;
     padding: 10px;
-    border-bottom: 3px solid #a39898;
+    border-bottom: 2px solid #eee;
     align-items: center;
     margin-right: 15px;
 }
@@ -17,7 +17,7 @@
     height: 30px;
     width: 30px;
     padding: 0;
-    border-radius: 5px;
+    transition: 1s;
 }
 
 .list__button-done {
@@ -31,13 +31,14 @@
 }
 
 .list__button-delete {
-    background-color: red;
+    background-color: crimson;
+    color: white;
 
 }
 
 .list__button-delete:hover {
     cursor: pointer;
-    background-color: hsl(0, 100%, 65%);
+    background-color: hsl(348, 83%, 55%);
 }
 
 .list__task-done {
