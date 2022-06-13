@@ -20,40 +20,40 @@
     padding: 0;
 }
 
-.list__button-done {
+.list__button--done {
     color: white;
     background-color: green;
 }
 
-.list__button-done:hover {
+.list__button--done:hover {
     transition: 1s;
     cursor: pointer;
     background-color: hsl(120, 100%, 35%);
 }
 
-.list__button-done:active {
+.list__button--done:active {
     transition: 0s;
     border: 2px solid black;
 }
 
-.list__button-delete {
+.list__button--delete {
     background-color: crimson;
     color: white;
 
 }
 
-.list__button-delete:hover {
+.list__button--delete:hover {
     transition: 1s;
     cursor: pointer;
     background-color: hsl(348, 83%, 55%);
 }
 
-.list__button-delete:active {
+.list__button--delete:active {
     transition: 0s;
     border: 2px solid black;
 }
 
-.list__task-done {
+.list__task--done {
     text-decoration: line-through;
 }
 
