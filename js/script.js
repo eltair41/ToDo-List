@@ -1,12 +1,12 @@
 {
-    const tasks = [];
+    let tasks = [];
+    let hideDoneTasks = false;
 
     const addNewTask = (newTaskContent) => {
-
-        tasks.push({
-            content: newTaskContent,
-        });
-
+        tasks = [
+            ...tasks,
+            { content: newTaskContent, done: false},
+        ];
         render();
     };
 
@@ -16,9 +16,10 @@
     }
 
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done = !tasks[taskIndex].done;
+        tasks = tasks.map((task) => {done: true},);
         render();
     };
+
 
     const bindDeleteEvents = () => {
         const deleteButtons = document.querySelectorAll(".js-delete");
@@ -40,29 +41,39 @@
         ));
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
             htmlString += `
             <li class="list__item">
-                <button class="js-done list__button list__button-done">
+                <button class="js-done list__button list__button--done">
                     ${task.done ? "✔" : ""}
                 </button>
-                <span class="list__task${task.done ? " list__task-done" : ""}">
+                <span class="list__task${task.done ? " list__task--done" : ""}">
                     ${task.content}
                 </span>
-                <button class="js-delete list__button list__button-delete">
+                <button class="js-delete list__button list__button--delete">
                     🗑
                 </button>
             </li>
             `;
         };
 
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+        document.querySelector(".js-tasks").innerHTML = htmlString
+    };
+
+    const renderButtons = () => {};
+
+    const bindButtonsEvents = () => {};
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
 
         bindDeleteEvents();
         bindToggleDoneEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
