@@ -78,7 +78,8 @@
             <button class="section__headerButtons">
                 Ukończ wszystkie
             </button>
-            `;} else {
+            `;
+        } else {
             
             if(tasks.length === 0) {
                 return buttonsElement.innerText = ``;

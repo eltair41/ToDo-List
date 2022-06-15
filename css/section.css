@@ -3,8 +3,22 @@
 }
 
 .section__header {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
     border-bottom: 2px solid #ddd;
     padding: 15px;
+}
+
+.section__headerButtons {
+    border: none;
+    background-color: white;
+    color: teal;
+    transition: 0.5s;
+}
+
+.section__headerButtons:hover {
+    cursor: pointer;
+    color: hsl(180, 100%, 35%);
 }
 
 .section__form {
