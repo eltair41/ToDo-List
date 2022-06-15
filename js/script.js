@@ -67,7 +67,25 @@
         document.querySelector(".js-tasks").innerHTML = htmlString
     };
 
-    const renderButtons = () => {};
+    const renderButtons = () => {
+        const buttonsElement = document.querySelector(".js-buttons");
+
+        if(tasks.length !== 0) {
+            return buttonsElement.innerHTML = `
+            <button class="section__headerButtons">
+                Ukryj ukończone
+            </button>
+            <button class="section__headerButtons">
+                Ukończ wszystkie
+            </button>
+            `;} else {
+            
+            if(tasks.length === 0) {
+                return buttonsElement.innerText = ``;
+            }
+        };
+    };
+
 
     const bindButtonsEvents = () => {};
 
