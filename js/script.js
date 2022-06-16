@@ -24,6 +24,14 @@
         render();
     };
 
+    const toggleAllTasksDone = (taskIndex) => {
+        tasks = tasks.map((task, index) => {
+            if(index === taskIndex)
+            return ({ ...task, done: !task.done})
+        });
+        render();
+    };
+
 
     const bindDeleteEvents = () => {
         const deleteButtons = document.querySelectorAll(".js-delete");
@@ -75,20 +83,33 @@
             <button class="section__headerButtons">
                 Ukryj ukończone
             </button>
-            <button class="section__headerButtons">
-                Ukończ wszystkie
+            <button class="js-allTasksDone section__headerButtons">
+                ${tasks.done ? "" : "Ukończ wszystkie"}
             </button>
             `;
         } else {
             
             if(tasks.length === 0) {
-                return buttonsElement.innerText = ``;
+                return buttonsElement.innerHTML = ``;
             }
         };
     };
 
 
-    const bindButtonsEvents = () => {};
+    const bindButtonsEvents = () => {
+        let toggleAllTasksDoneButton = document.querySelector(".js-allTasksDone");
+        
+        toggleAllTasksDoneButton = (toggleAllDoneButton) => {
+            if(tasks.length !== 0) {
+                return (toggleAllDoneButton.addEventListener("click", () => {
+                    toggleAllTasksDone(index);
+                    })
+                )
+            } else {  
+                return;
+            };
+        };
+    };
 
     const render = () => {
         renderTasks();
