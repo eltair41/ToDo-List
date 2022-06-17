@@ -22,7 +22,7 @@
     color: hsl(180, 100%, 35%);
 }
 
-.section__headerButtonsdisabled {
+.section__headerButtons:disabled {
     color: #ddd;
     background-color: white;
     border: none;

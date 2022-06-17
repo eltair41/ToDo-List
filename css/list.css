@@ -58,6 +58,10 @@
     text-decoration: line-through;
 }
 
+.list__item--hide {
+    display: none;
+}
+
 
 
 
