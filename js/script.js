@@ -29,7 +29,6 @@
         render();
     };
 
-
     const bindDeleteEvents = () => {
         const deleteButtons = document.querySelectorAll(".js-delete");
 
@@ -80,8 +79,8 @@
             <button class="section__headerButtons">
                 Ukryj ukończone
             </button>
-            <button class="js-allTasksDone section__headerButtons">
-                ${tasks.done ? "" : "Ukończ wszystkie"}
+            <button class="js-allTasksDone section__headerButtons${tasks.every(({done}) => done) ? "disabled" : ""}">
+                Ukończ wszystkie
             </button>
             `;
         } else {
@@ -89,7 +88,7 @@
             if(tasks.length === 0) {
                 return buttonsElement.innerHTML = ``;
             }
-        };
+        };  
     };
 
 
@@ -101,7 +100,7 @@
             })
         };
     };
-
+    
     const render = () => {
         renderTasks();
         renderButtons();

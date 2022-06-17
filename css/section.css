@@ -21,6 +21,12 @@
     color: hsl(180, 100%, 35%);
 }
 
+.section__headerButtonsdisabled {
+    color: #ddd;
+    background-color: white;
+    border: none;
+}
+
 .section__form {
     display: grid;
     grid-template-columns: 1fr auto;
