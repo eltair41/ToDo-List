@@ -7,6 +7,7 @@
     grid-template-columns: 1fr auto;
     border-bottom: 2px solid #ddd;
     padding: 15px;
+    margin-bottom: 10px;
 }
 
 .section__headerButtons {
