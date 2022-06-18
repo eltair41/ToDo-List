@@ -10,7 +10,7 @@
         render();
     };
 
-    const toggleHideDoneTasks = (taskIndex) => {
+    const toggleHideDoneTasks = () => {
         hideDoneTasks = !hideDoneTasks
         render();
     };
