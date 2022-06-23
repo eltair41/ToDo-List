@@ -61,7 +61,7 @@
             htmlString += `
             <li class="list__item
             ${hideDoneTasks && task.done ? "list__item--hide" : ""}">
-                <button class="js-done list__button list__button--done">
+                <button class="js-done list__button list__button--toggleDone">
                     ${task.done ? "✔" : ""}
                 </button>
                 <span class="list__task${task.done ? " list__task--done" : ""}">
@@ -82,11 +82,11 @@
 
         if(tasks.length !== 0) {
             return buttonsElement.innerHTML = `
-            <button class="js-hideDoneTasks section__headerButtons"
+            <button class="js-hideDoneTasks buttons__button"
             ${tasks.some(({done}) => done) ? "" : "disabled"}>
                 ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
             </button>
-            <button class="js-allTasksDone section__headerButtons"
+            <button class="js-allTasksDone buttons__button"
             ${tasks.every(({done}) => done) ? "disabled" : ""}>
                 Ukończ wszystkie
             </button>
