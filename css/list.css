@@ -17,32 +17,29 @@
 
 .list__button {
     border: none;
+    color: white;
     border-radius: 2px;
     height: 30px;
     width: 30px;
     padding: 0;
-    transition: 1s;
+    transition: background 0.3s;
 }
 
-.list__button--done {
-    color: white;
+.list__button--toggleDone {
     background-color: green;
 }
 
-.list__button--done:hover {
+.list__button--toggleDone:hover {
     cursor: pointer;
     background-color: hsl(120, 100%, 35%);
 }
 
-.list__button--done:active {
-    transition: 0s;
-    border: 2px solid black;
+.list__button--toggleDone:active {
+    background-color: hsl(120, 100%, 40%);
 }
 
 .list__button--delete {
     background-color: crimson;
-    color: white;
-
 }
 
 .list__button--delete:hover {
@@ -51,8 +48,7 @@
 }
 
 .list__button--delete:active {
-    transition: 0s;
-    border: 2px solid black;
+    background-color: hsl(348, 83%, 60%);
 }
 
 .list__task--done {
