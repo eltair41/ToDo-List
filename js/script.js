@@ -68,7 +68,7 @@
                     ${task.content}
                 </span>
                 <button class="js-delete list__button list__button--delete">
-                    🗑
+                    🗑 
                 </button>
             </li>
             `;
