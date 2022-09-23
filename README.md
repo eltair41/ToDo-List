@@ -19,8 +19,9 @@ As you can see the new task has been added to the list and the focus is automati
 4. You can use two special buttons as well. The first one turns on when at least one of the tasks has been completed, then the button can be used to hide or show completed tasks.
 The second, when clicked, sets all tasks as completed, then it is turned off until there is one incomplete task.
 5. An example of project's operation has been presented on the GIF.
-![To-Do-List-GIF](images/HOW_IT_WORKS-GIF.gif)
+![To-Do-List-GIF](images/How_it_works_todos.gif)
 
 ## Technologies/Conventions I used
 Project is created with:
 - BEM
+- media queries
