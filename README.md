@@ -25,3 +25,4 @@ The second, when clicked, sets all tasks as completed, then it is turned off unt
 Project is created with:
 - BEM
 - media queries
+- typescript
